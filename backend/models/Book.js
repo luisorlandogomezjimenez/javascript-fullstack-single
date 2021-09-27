@@ -15,7 +15,7 @@ const BookSchema = new Schema({
   },
   imagePath: {
     type: String,
-    require: true,
+    // require: true,
   },
   createdAt: {
     type: Date,

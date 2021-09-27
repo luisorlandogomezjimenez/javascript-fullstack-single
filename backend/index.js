@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 //Routes
-app.use(require("./routes/books.routes"));
+app.use("/api/books", require("./routes/books"));
 
 //Static files
 app.use(express.static(path.join(__dirname, "public")));
